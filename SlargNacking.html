@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SlargNacking</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+</head>
+
+<body>
+    <h1>SlargNacking</h1>
+    <p>Based on <a target="_blank" href="http://theoatmeal.com/comics/unhappy">this comic by The Oatmeal.</a></p>
+
+    <div class="klall-wrapper">
+        <div class="klall">
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="hole" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+    </div>
+
+    <div class="floor-wrapper">
+        <div class="floor" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <hr class="floor-line"></hr>
+        </div>
+    </div>
+</body>
+
+<style>
+    html {
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 700;
+    }
+
+    p {
+        text-align: center;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+    }
+
+    div.klall {
+        margin: auto;
+        padding-top: 30px;
+        width: 800px;
+        height: 400px;
+    }
+
+    div.klall div.hole {
+        width: 80px;
+        height: 80px;
+        /*outline: 1px solid #444;*/
+        float: left;
+        background-color: #333;
+    }
+
+    div.blork div.eyes {
+        margin-top: 15px;
+    }
+
+    div.blork div.left-eye {
+        position: absolute;
+        margin-left: 11px;
+        background-color: white;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+    }
+
+    div.blork div.right-eye {
+        margin-left: 41px;
+        background-color: white;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+    }
+
+    div.blork div.mouth {
+        margin-top: 5px;
+        margin-left: 32px;
+        width: 10px;
+        height: 3px;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    div.floor {
+        margin: auto;
+        width: 850px;
+        height: 350px;
+    }
+
+    hr.floor-line {
+        border: 2px solid #DDD;
+        margin-bottom: 5px;
+    }
+
+    div.floor div.blork {
+        margin-left: 5px;
+        margin-bottom: 3px;
+    }
+
+    div.blork {
+        width: 74px;
+        height: 74px;
+        border: 3px solid #333;
+        float: left;
+        background-color: rgb(170, 170, 170);
+        cursor: default;
+    }
+</style>
+
+<script>
+var numBlorks = 0;
+var colors = ['red', 'blue', 'green', 'teal', 'rosybrown', 'tan', 'plum', 'saddlebrown'];
+
+function generateBlork() {
+    // generates and appends the following:
+    // <div id="6" class="blork" ondragstart="drag(event)" draggable=true>
+    //     <div class="eyes">
+    //         <div class="left-eye"></div>
+    //         <div class="right-eye"></div>
+    //     </div>
+    //     <div class="mouth"></div>
+    // </div>
+    let blork = document.createElement("div");
+    blork.className = "blork";
+    numBlorks++;
+    blork.id = numBlorks;
+    blork.setAttribute("ondragstart", "drag(event)");
+    blork.setAttribute("draggable", "true");
+    blork.innerHTML = '<div class="eyes"><div class="left-eye"></div><div class="right-eye"></div></div><div class="mouth"></div>';
+    resetColor(blork);
+    document.querySelector(".floor").appendChild(blork);
+}
+
+for (var i = 0; i < 40; i++) {
+    generateBlork();
+}
+
+function setColors() {
+    let blorks = document.querySelectorAll(".blork");
+    blorks.forEach(
+        function(blork, index, blorks) {
+            if (blork.closest(".hole") && blork.style.backgroundColor == "rgb(170, 170, 170)") {
+                blork.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                // var hue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
+                // blork.style.backgroundColor = hue;
+            }
+        }
+    );
+    return true;
+}
+
+function resetColor(blork) {
+    return blork.style.backgroundColor = "rgb(170, 170, 170)";
+}
+
+function allowDrop(ev) {
+    if ((ev.target.className == "hole" && !ev.target.firstChild) || ev.target.closest(".floor")) {
+        ev.preventDefault();
+    }
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.closest(".blork").id);
+}
+
+function drop(ev) {
+    if (ev.target.className == "hole" && !ev.target.firstChild) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+        if (Math.random() < 0.3) {
+            setColors();
+        }
+    }
+    if (ev.target.closest(".floor")) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.closest(".floor").appendChild(document.getElementById(data));
+        resetColor(document.getElementById(data));
+    }
+}
+</script>
+
+</html>
